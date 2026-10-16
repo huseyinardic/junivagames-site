@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Juniva | Small mobile games, made with care</title>
-<meta name="description" content="Juniva is a one-person studio making small, quick-to-play mobile games like Stack Tower and Chameleon Dash.">
+<meta name="description" content="Juniva is a one-person studio making small, quick-to-play mobile games like Istif, Chameleon Dash and Snack Balance.">
 <link rel="icon" type="image/png" href="assets/favicon.png">
 <meta property="og:title" content="Juniva">
 <meta property="og:description" content="Small mobile games, made with care by one developer.">
@@ -83,6 +83,7 @@
   }
   .game--stack { background: linear-gradient(135deg, #2d2b55 0%, #171730 100%); }
   .game--chameleon { background: linear-gradient(135deg, #1f4a37 0%, #0a1f16 100%); }
+  .game--snack { background: linear-gradient(135deg, #8a4b23 0%, #3d1f0e 100%); }
   .game img {
     width: 200px; height: 200px;
     border-radius: 44px;
@@ -108,6 +109,26 @@
   }
   .game--stack .status { box-shadow: inset 0 0 0 2px #ffd97a; }
   .game--chameleon .status { box-shadow: inset 0 0 0 2px #8ee06a; }
+  .game--snack .status { box-shadow: inset 0 0 0 2px #ffc46b; }
+
+  /* live games: the status pill is a link to the Play Store listing */
+  a.status {
+    text-decoration: none;
+    padding: 12px 22px;
+    font-size: 1.05rem;
+    transition: background 0.15s ease, transform 0.15s ease;
+  }
+  a.status:hover { background: rgba(255, 255, 255, 0.2); color: #ffffff; transform: translateY(-1px); }
+  a.status .arrow { margin-left: 6px; }
+  .live {
+    display: inline-block;
+    margin-bottom: 10px;
+    font-size: 0.8rem;
+    font-weight: 600;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: #8ee06a;
+  }
 
   .more { padding-top: 40px; color: var(--ink-soft); }
 
@@ -169,11 +190,12 @@
 
     <article class="game game--stack">
       <div class="wrap">
-        <img src="assets/stack-tower.png" alt="Stack Tower app icon" width="200" height="200">
+        <img src="assets/stack-tower.png" alt="Istif app icon" width="200" height="200">
         <div>
+          <span class="live">Out now</span>
           <h3>Istif</h3>
           <p>Tap to drop each block and line it up with the one below. Land it cleanly for a Perfect and keep your tower wide as it climbs.</p>
-          <span class="status">Coming soon to Google Play</span>
+          <a class="status" href="https://play.google.com/store/apps/details?id=com.huseynardic.stacktower" target="_blank" rel="noopener">Get it on Google Play<span class="arrow" aria-hidden="true">&rarr;</span></a>
         </div>
       </div>
     </article>
@@ -182,8 +204,20 @@
       <div class="wrap">
         <img src="assets/chameleon-dash.png" alt="Chameleon Dash app icon" width="200" height="200">
         <div>
+          <span class="live">Out now</span>
           <h3>Chameleon Dash</h3>
-          <p>Tap to change your chameleon's color and match every gate before it reaches you. Unlock new color themes and keep your daily streak going.</p>
+          <p>Tap to change your chameleon's color and match every gate before it reaches you. Collect fireflies, dress up your chameleon and keep your daily streak going.</p>
+          <a class="status" href="https://play.google.com/store/apps/details?id=com.huseynardic.chameleondash" target="_blank" rel="noopener">Get it on Google Play<span class="arrow" aria-hidden="true">&rarr;</span></a>
+        </div>
+      </div>
+    </article>
+
+    <article class="game game--snack">
+      <div class="wrap">
+        <img src="assets/snack-balance.png" alt="Snack Balance app icon" width="200" height="200">
+        <div>
+          <h3>Snack Balance</h3>
+          <p>Drop snacks onto the bamboo beam and keep it balanced for the hungry panda. Win levels in a row to multiply your rewards, race animal friends in the Panda Race and dress up your panda.</p>
           <span class="status">Coming soon to Google Play</span>
         </div>
       </div>
